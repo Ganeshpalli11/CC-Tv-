@@ -1,0 +1,26 @@
+.navDiv {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+   
+  }
+  
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    padding:16px;
+    border:solid 2px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav ul li{
+    margin-right:30px;
+}
+.navLink {
+    text-decoration: none;
+  }
+  

@@ -1,0 +1,37 @@
+.carousel-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .slick-prev, .slick-next {
+    color: black; /* Customize arrow color */
+  }
+  
+  .slick-dots li button:before {
+    color: black; /* Customize dot color */
+  }
+  .cr1{
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .home-content-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .article {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .home-content-container {
+      flex-direction: column;
+    }
+  }
+  
