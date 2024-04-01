@@ -3,7 +3,7 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 30px;
-   
+   backdrop-filter: blur(5px);
   }
   
 .nav ul{
