@@ -1,26 +1,74 @@
 .navDiv {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 30px;
-   backdrop-filter: blur(5px);
-  }
-  
-.nav ul{
-    list-style-type: none;
-    display: flex;
-    padding:16px;
-    border:solid 2px;
-    border-radius: 25px;
-    justify-content: center;
-    align-items: center;
-    
+    position: fixed;
+    top: 0;
+    width: 60%;
+    padding: 10px;
+    border-radius: 20px;
+    background: transparent;
+    z-index: 999;
+    margin-bottom: 20px;
+    backdrop-filter: blur(3px);
 }
 
-.nav ul li{
-    margin-right:30px;
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 10px 5px; /* Adjusted padding */
+    border-radius: 20px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
 }
+
+
+.nav ul li {
+    font-size: 24px;
+}
+
 .navLink {
     text-decoration: none;
-  }
-  
+    color: #000;
+    position: relative;
+    transition: color 0.3s ease;
+    overflow: hidden; /* Ensures the overflow is hidden for the pseudo-element */
+}
+
+.navLink::before {
+    content: "";
+    position: absolute;
+    top: 0; /* Starts from top */
+    right: 0;
+    width: 0%;
+    height: 3px; /* Height of the underline */
+    background: linear-gradient(to right, #8A3FFC, #FF6584);
+        transition: width 0.3s ease; /* Smooth transition for width */
+    z-index: -1;
+}
+
+.navLink:hover::before {
+    width: 100%; /* Shrink width on hover */
+}
+
+.navLink::after {
+    content: "";
+    position: absolute;
+    bottom: 0; /* Starts from bottom */
+    left: 0;
+    width: 0%;
+    height: 3px; /* Height of the underline */
+    background: linear-gradient(to right, #8A3FFC, #FF6584);
+        transition: width 0.3s ease; /* Smooth transition for width */
+    z-index: -1;
+}
+
+.navLink:hover::after {
+    width: 100%; /* Shrink width on hover */
+}
+.logo{
+    width:100px;
+    height:100px;
+    float: right;
+    position: fixed;
+    top:5px;
+    right:10%;
+}
