@@ -24,6 +24,17 @@
 .nav ul li {
     font-size: 24px;
 }
+@media screen and (max-width:900px){
+    .nav ul li{
+        margin-right:10px;
+    }
+  .logo{
+    display:none;
+  }
+  .navDiv{
+    width:100%;
+  }
+}
 
 .navLink {
     text-decoration: none;
@@ -72,3 +83,4 @@
     top:5px;
     right:10%;
 }
+
